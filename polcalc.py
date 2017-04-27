@@ -21,7 +21,7 @@ def calc(equation):
     if x in symbols:
       b = stack.pop()
       a = stack.pop()
-      result = symbols[x](a, ab)
+      result = symbols[x](a, b)
       stack.append(result)
     else:
       stack.append(x)
